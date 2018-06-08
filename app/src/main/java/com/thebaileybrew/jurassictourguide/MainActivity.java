@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
     // https://github.com/chrisbanes/cheesesquare/blob/master/app/src/main/java/com/support/android/designlibdemo/CheeseListFragment.java
     // https://github.com/antoniolg/MaterializeYourApp
 
+    // Simplest explanation for including Tab Layout and ViewPager
+    // https://android.jlelse.eu/tablayout-and-viewpager-in-your-android-app-738b8840c38a
+
 
 
 
