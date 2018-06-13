@@ -1,6 +1,7 @@
 package com.thebaileybrew.jurassictourguide;
 
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -38,6 +39,11 @@ public class MainActivity extends AppCompatActivity {
 
         //Creates a simple Adapter that populates the correct fragment to be shown
         FragmentAdapter adapter = new FragmentAdapter(this, getSupportFragmentManager());
+        //Sets the viewpager adapter
+        viewPager.setAdapter(adapter);
+        //Set the TabLayout with ViewPager
+        TabLayout tabLayoutMenu = findViewById(R.id.sliding_tabs);
+        tabLayoutMenu.setupWithViewPager(viewPager, true);
 
 
     }
