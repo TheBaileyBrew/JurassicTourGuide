@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">JurassicTourGuide</string>
+    <string name="isla_nublar">Isla Nublar</string>
+    <string name="isla_sorna">Isla Sorna</string>
+    <string name="san_diego">San Diego</string>
+    <string name="other_important">Other Location</string>
 </resources>

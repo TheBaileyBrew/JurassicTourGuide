@@ -33,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Find the view pager that allows users to swipe between fragments
+        ViewPager viewPager = findViewById(R.id.viewpager);
+
+        //Creates a simple Adapter that populates the correct fragment to be shown
+        FragmentAdapter adapter = new FragmentAdapter(this, getSupportFragmentManager());
+
 
     }
 }

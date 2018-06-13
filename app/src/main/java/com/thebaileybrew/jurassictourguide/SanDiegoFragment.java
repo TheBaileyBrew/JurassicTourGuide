@@ -1,15 +1,15 @@
 package com.thebaileybrew.jurassictourguide;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class JurassicFragment extends Fragment {
+public class SanDiegoFragment extends Fragment {
 
-    public static JurassicFragment newInstance() {
-        JurassicFragment fragment = new JurassicFragment();
+    public static SanDiegoFragment newInstance() {
+        SanDiegoFragment fragment = new SanDiegoFragment();
         return fragment;
     }
 
