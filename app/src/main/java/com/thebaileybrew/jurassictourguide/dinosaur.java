@@ -1,5 +1,7 @@
 package com.thebaileybrew.jurassictourguide;
 
+import android.content.res.Resources;
+
 public class dinosaur {
     private final int id;
     private final String dinosaur;
@@ -35,4 +37,6 @@ public class dinosaur {
     public String getDinosaurDangerLevel() {
         return dinosaurDangerLevel;
     }
+
+
 }

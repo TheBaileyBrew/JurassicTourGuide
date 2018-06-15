@@ -1,9 +1,13 @@
 package com.thebaileybrew.jurassictourguide;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.ImageSpan;
 
 public class FragmentAdapter extends FragmentPagerAdapter {
 
@@ -18,13 +22,13 @@ public class FragmentAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0: //Return Fragment -- Remove Break;
-                return new IslaNublarFragment();
+                return new FragmentJurassicOne();
             case 1: //Return Fragment -- Remove Break;
-                return new IslaSornaFragment();
+                return new FragmentJurassicTwo();
             case 2:
-                return new SanDiegoFragment();
+                return new FragmentJurassicThree();
             case 3:
-                return new OtherImportantLocationFragment();
+                return new FragmentJurassicWorld();
         }
         return null; //Remove NULL return
     }
@@ -37,16 +41,15 @@ public class FragmentAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        //Generated the title based on position returned
         switch(position) {
             case 0:
-                return mContext.getString(R.string.isla_nublar);
+                return mContext.getString(R.string.jurassic_park_one);
             case 1:
-                return mContext.getString(R.string.isla_sorna);
+                return mContext.getString(R.string.jurassic_park_two);
             case 2:
-                return mContext.getString(R.string.san_diego);
+                return mContext.getString(R.string.jurassic_park_three);
             case 3:
-                return mContext.getString(R.string.other_important);
+                return mContext.getString(R.string.jurassic_world);
             default:
                 return null;
         }
