@@ -9,14 +9,23 @@ public class dinosaur {
     private final String dinosaurLocation;
     private final String dinosaurClassification;
     private final String dinosaurDangerLevel;
+    private final String dinosaurDetails;
+    //Default Stats
+    private final String dinoHeight;
+    private final String dinoWeight;
+    private final String dinoDiscovered;
 
-    public dinosaur(int id, String dinosaur, int dinosaurResource, String dinosaurLocation, String dinosaurClassification, String dinosaurDangerLevel) {
+    public dinosaur(int id, String dinosaur, int dinosaurResource, String dinosaurLocation, String dinosaurClassification, String dinosaurDangerLevel, String dinosaurDetails, String dinoHeight, String dinoWeight, String dinoDiscovered) {
         this.id = id;
         this.dinosaur = dinosaur;
         this.dinosaurResource = dinosaurResource;
         this.dinosaurLocation = dinosaurLocation;
         this.dinosaurClassification = dinosaurClassification;
         this.dinosaurDangerLevel = dinosaurDangerLevel;
+        this.dinosaurDetails = dinosaurDetails;
+        this.dinoHeight = dinoHeight;
+        this.dinoWeight = dinoWeight;
+        this.dinoDiscovered = dinoDiscovered;
     }
 
     public int getId() {
@@ -36,6 +45,18 @@ public class dinosaur {
     }
     public String getDinosaurDangerLevel() {
         return dinosaurDangerLevel;
+    }
+    public String getDinosaurDetails() {
+        return dinosaurDetails;
+    }
+    public String getDinoHeight() {
+        return dinoHeight;
+    }
+    public String getDinoWeight() {
+        return dinoWeight;
+    }
+    public String getDinoDiscovered() {
+        return dinoDiscovered;
     }
 
 

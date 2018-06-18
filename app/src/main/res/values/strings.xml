@@ -4,4 +4,9 @@
     <string name="jurassic_park_two">Jurassic Park Two</string>
     <string name="jurassic_park_three">Jurassic Park Three</string>
     <string name="jurassic_world">Jurassic World</string>
+    <string name="located">Located:  </string>
+    <string name="threat_level">Threat Level:  </string>
+    <string name="weight">WEIGHT:  </string>
+    <string name="length">LENGTH:  </string>
+    <string name="discovered">YEAR DISCOVERED:  </string>
 </resources>

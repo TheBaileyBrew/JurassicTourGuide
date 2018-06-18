@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimaryDark">#0c0d08</color>
+    <color name="colorPrimaryWhite">#ffffff</color>
+    <color name="colorPrimaryDark">#0C0D08</color>
+    <color name="colorPrimaryDarkFade">#350C0D08</color>
     <color name="colorAccent">#DBB001</color>
+    <color name="colorAccentFade">#35DBB001</color>
     <color name="colorPrimary">#BC0305</color>
+    <color name="colorPrimaryFade">#35bc0305</color>
 
-    <color name="colorPrimaryWorld">#b8b8b8</color>
-    <color name="colorPrimaryDarkWorld">#233b79</color>
-    <color name="colorAccentWorld">#3c76bf</color>
+    <color name="colorPrimaryWorld">#B8B8B8</color>
+    <color name="colorPrimaryDarkWorld">#233B79</color>
+    <color name="colorAccentWorld">#3C76BF</color>
 
-    <color name="colorFadeBG">#99dcdcdc</color>
+    <color name="colorFadeBG">#99DCDCDC</color>
 </resources>

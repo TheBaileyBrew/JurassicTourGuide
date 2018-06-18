@@ -1,30 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="200dp"
-    android:background="#fff"
-    android:padding="4dp">
-
-    <ImageView
-        android:id="@+id/list_item_image"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#dde"
-        android:scaleType="centerCrop" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="40sp"
-        android:layout_gravity="bottom"
-        android:background="@drawable/image_shadow" />
-
-    <TextView
-        android:id="@+id/list_item_title"
+<android.support.v7.widget.CardView
+    android:id="@+id/dino_card_expander"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="10dp">
+    <com.silencedut.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable_dino"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:padding="8dp"
-        android:textColor="#fff"
-        android:textSize="16sp" />
-
-</FrameLayout>
+        app:expWithParentScroll="true"
+        app:expDuration="250"
+        app:expExpandScrollTogether="false">
+        <RelativeLayout
+            android:id="@+id/dino_layout_header"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <ImageView
+                android:id="@+id/dino_image"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"/>
+            <TextView
+                android:id="@+id/dino_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/dino_image"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:text="DINO NAME HERE"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:shadowColor="@color/colorPrimaryDark"/>
+            <TextView
+                android:id="@+id/dino_classification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/dino_image"
+                android:layout_below="@id/dino_title"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="6dp"
+                android:textSize="24sp"
+                android:text="CLASSIFICATION HERE"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:shadowColor="@color/colorPrimaryDark"/>
+            <TextView
+                android:id="@+id/dino_threatlevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/dino_image"
+                android:layout_below="@id/dino_classification"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="4dp"
+                android:textSize="24sp"
+                android:text="Threat: "
+                android:shadowDx="2"
+                android:shadowDy="3"
+                android:shadowRadius="1"
+                android:shadowColor="@color/colorPrimaryDark"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <View
+                android:id="@+id/dino_breakpoint"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/dino_details"
+                android:layout_below="@id/dino_breakpoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="DINO FACTS HERE"/>
+            <View
+                android:id="@+id/dino_break_stats"
+                android:layout_width="match_parent"
+                android:layout_below="@id/dino_details"
+                android:layout_marginHorizontal="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/dino_quick_fact_one"
+                android:layout_below="@id/dino_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:text="FACT ONE"/>
+            <TextView
+                android:id="@+id/dino_quick_fact_two"
+                android:layout_below="@id/dino_quick_fact_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:text="FACT ONE"/>
+            <TextView
+                android:id="@+id/dino_quick_fact_three"
+                android:layout_below="@id/dino_quick_fact_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:text="FACT THREE"/>
+        </RelativeLayout>
+    </com.silencedut.expandablelayout.ExpandableLayout>
+</android.support.v7.widget.CardView>

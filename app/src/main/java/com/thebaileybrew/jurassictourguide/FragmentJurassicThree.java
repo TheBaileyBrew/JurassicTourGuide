@@ -1,5 +1,6 @@
 package com.thebaileybrew.jurassictourguide;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -43,6 +44,10 @@ public class FragmentJurassicThree extends Fragment implements View.OnClickListe
                 break;
             case R.id.recycler_card_dinosaur:
                 Toast.makeText(v.getContext(), "You've Selected Dinosaurs", Toast.LENGTH_SHORT).show();
+                String movieSelection = "Three";
+                Intent openDinosaurs = new Intent(v.getContext(),DinosaurActivity.class);
+                openDinosaurs.putExtra("FromMovie", movieSelection);
+                v.getContext().startActivity(openDinosaurs);
                 break;
             case R.id.recycler_card_people:
                 Toast.makeText(v.getContext(), "You've Selected Notable People", Toast.LENGTH_SHORT).show();
