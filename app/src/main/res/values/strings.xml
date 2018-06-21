@@ -9,4 +9,9 @@
     <string name="weight">WEIGHT:  </string>
     <string name="length">LENGTH:  </string>
     <string name="discovered">YEAR DISCOVERED:  </string>
+    <string name="character_details">Character Details: </string>
+    <string name="films_appeared">Films Appeared: </string>
+    <string name="role_in_films">Role in Films: </string>
+    <string name="portrayed_by">Portrayed By: </string>
+    <string name="character_name">Character Name</string>
 </resources>

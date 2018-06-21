@@ -38,22 +38,21 @@ public class FragmentJurassicThree extends Fragment implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+        String movieSelection = "Three";
         switch(v.getId()) {
             case R.id.recycler_card_locations:
-                Toast.makeText(v.getContext(), "You've Selected Locations", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.recycler_card_dinosaur:
-                Toast.makeText(v.getContext(), "You've Selected Dinosaurs", Toast.LENGTH_SHORT).show();
-                String movieSelection = "Three";
                 Intent openDinosaurs = new Intent(v.getContext(),DinosaurActivity.class);
                 openDinosaurs.putExtra("FromMovie", movieSelection);
                 v.getContext().startActivity(openDinosaurs);
                 break;
             case R.id.recycler_card_people:
-                Toast.makeText(v.getContext(), "You've Selected Notable People", Toast.LENGTH_SHORT).show();
+                Intent openPeople = new Intent(v.getContext(), PeopleActivity.class);
+                openPeople.putExtra("FromMovie", movieSelection);
+                v.getContext().startActivity(openPeople);
                 break;
             case R.id.recycler_card_events:
-                Toast.makeText(v.getContext(), "You've Selected Important Events", Toast.LENGTH_SHORT).show();
                 break;
         }
     }

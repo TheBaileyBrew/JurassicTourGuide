@@ -25,9 +25,9 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     implementation 'com.github.SilenceDut:ExpandableLayout:1.2.0'
-    //implementation('com.mikepenz:materialdrawer:6.0.7@aar') { transitive = true }
-    //implementation 'com.mikepenz:google-material-typeface:3.0.1.2.original@aar'
-    //implementation 'com.mikepenz:fontawesome-typeface:5.0.6.0@aar'
+    implementation 'com.jackandphantom.android:circularimageview:1.2.0'
+    implementation 'me.zhanghai.android.materialprogressbar:library:1.4.2'
+    implementation 'com.cleveroad:fan-layout-manager:1.0.5'
 
 
     testImplementation 'junit:junit:4.12'

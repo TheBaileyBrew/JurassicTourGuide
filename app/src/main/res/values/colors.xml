@@ -12,5 +12,6 @@
     <color name="colorPrimaryDarkWorld">#233B79</color>
     <color name="colorAccentWorld">#3C76BF</color>
 
-    <color name="colorFadeBG">#99DCDCDC</color>
+    <color name="colorFadeBG">#99d2d2d2</color>
+    <color name="colorSuperFadeBG">#dcffffff</color>
 </resources>

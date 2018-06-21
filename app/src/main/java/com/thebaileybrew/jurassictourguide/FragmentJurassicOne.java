@@ -37,22 +37,27 @@ public class FragmentJurassicOne extends Fragment implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
+        String movieSelection = "One";
         switch(v.getId()) {
             case R.id.recycler_card_locations:
-                Toast.makeText(v.getContext(), "You've Selected Locations", Toast.LENGTH_SHORT).show();
+                Intent openLocations = new Intent(v.getContext(),LocationActivity.class);
+                openLocations.putExtra("FromMovie", movieSelection);
+                v.getContext().startActivity(openLocations);
                 break;
             case R.id.recycler_card_dinosaur:
-                Toast.makeText(v.getContext(), "You've Selected Dinosaurs", Toast.LENGTH_SHORT).show();
-                String movieSelection = "One";
                 Intent openDinosaurs = new Intent(v.getContext(),DinosaurActivity.class);
                 openDinosaurs.putExtra("FromMovie", movieSelection);
                 v.getContext().startActivity(openDinosaurs);
                 break;
             case R.id.recycler_card_people:
-                Toast.makeText(v.getContext(), "You've Selected Notable People", Toast.LENGTH_SHORT).show();
+                Intent openPeople = new Intent(v.getContext(), PeopleActivity.class);
+                openPeople.putExtra("FromMovie", movieSelection);
+                v.getContext().startActivity(openPeople);
                 break;
             case R.id.recycler_card_events:
-                Toast.makeText(v.getContext(), "You've Selected Important Events", Toast.LENGTH_SHORT).show();
+                Intent openEvents = new Intent(v.getContext(),EventMainFragActivity.class);
+                openEvents.putExtra("FromMovie", movieSelection);
+                v.getContext().startActivity(openEvents);
                 break;
         }
     }

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/jurassic_progress_background_bottom"
+        android:layout_width="285dp"
+        android:layout_height="285dp"
+        android:indeterminate="true"
+        android:rotation="115"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mpb_indeterminateTint="@color/colorPrimaryDark"
+        app:mpb_showProgressBackground="false"
+        />
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/jurassic_progress_background"
+        android:layout_width="272dp"
+        android:layout_height="272dp"
+        android:indeterminate="true"
+        android:rotation="46"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mpb_indeterminateTint="@color/colorAccent"
+        app:mpb_showProgressBackground="false"
+        />
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/jurassic_progress"
+        android:layout_width="248dp"
+        android:layout_height="248dp"
+        android:indeterminate="true"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mpb_indeterminateTint="@color/colorPrimary"
+        app:mpb_showProgressBackground="false"
+        />
+    <ImageView
+        android:id="@+id/jurassic_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/jurassic_logo"/>
+    <TextView
+        android:id="@+id/text_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/jurassic_logo">
+    </TextView>
+
+</android.support.constraint.ConstraintLayout>

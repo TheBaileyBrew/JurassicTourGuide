@@ -28,7 +28,8 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 android:layout_centerVertical="true"
-                android:scaleType="centerInside"/>
+                android:scaleType="centerInside"
+                android:elevation="6dp"/>
             <TextView
                 android:id="@+id/dino_title"
                 android:layout_width="wrap_content"
@@ -75,7 +76,7 @@
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp">
+            android:layout_height="wrap_content">
             <View
                 android:id="@+id/dino_breakpoint"
                 android:layout_width="match_parent"
@@ -89,7 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18dp"
-                android:layout_marginRight="6dp"
+                android:layout_marginRight="18dp"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:text="DINO FACTS HERE"/>
@@ -120,7 +121,7 @@
                 android:layout_marginRight="18dp"
                 android:layout_marginTop="5dp"
                 android:textSize="18sp"
-                android:text="FACT ONE"/>
+                android:text="FACT TWO"/>
             <TextView
                 android:id="@+id/dino_quick_fact_three"
                 android:layout_below="@id/dino_quick_fact_two"

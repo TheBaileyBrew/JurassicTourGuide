@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        tools:background="@color/colorPrimaryFade">
+        <TextView
+            android:id="@+id/event_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="Isla Nublar Incident"/>
+        <TextView
+            android:id="@+id/event_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/event_name"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:text="Isla Nublar - Velociraptor Pen"/>
+        <ImageView
+            android:id="@+id/event_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_below="@id/event_location"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/event_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/event_image"
+            android:text="These are the people who witnessed"/>
+        <TextView
+            android:id="@+id/event_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/event_people"
+            android:text="Lots of text should go here because the quick brown fox jumped over the lazy dog before he could stop."/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/jpark"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@color/colorSuperFadeBG"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/location_recycler"
+        android:layout_width="75dp"
+        android:layout_height="380dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/location_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/location_recycler"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:shadowDy="4"
+        android:shadowDx="4"
+        android:shadowRadius="3"
+        android:text="LOCATION NAME"/>
+
+    <TextView
+        android:id="@+id/location_details"
+        app:layout_constraintTop_toBottomOf="@id/location_name"
+        app:layout_constraintLeft_toRightOf="@id/location_recycler"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:shadowDy="4"
+        android:shadowDx="4"
+        android:shadowRadius="3"
+        android:text="LOCATION DETAILS"/>
+
+
+
+    <ImageView
+        android:id="@+id/location_zoom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="40dp"
+        android:layout_width="400dp"
+        android:layout_height="300dp" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <android.support.v7.widget.CardView
         android:id="@+id/recycler_card_locations"
         style="@style/CardView.Light"
         android:layout_margin="8dp"
         android:layout_width="match_parent"
         android:layout_height="150dp"
+        android:layout_alignParentTop="true"
         app:cardCornerRadius="8dp"
         app:cardElevation="8dp">
         <RelativeLayout
@@ -38,6 +41,15 @@
                 android:shadowDy="6"
                 android:shadowDx="6"
                 android:shadowRadius="4"/>
+            <ImageView
+                android:id="@+id/coming_soon"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="-5dp"
+                android:layout_marginRight="-7dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/comingsoon" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 
@@ -45,6 +57,7 @@
         android:id="@+id/recycler_card_dinosaur"
         style="@style/CardView.Light"
         android:layout_margin="8dp"
+        android:layout_below="@id/recycler_card_locations"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         app:cardCornerRadius="6dp"
@@ -81,6 +94,7 @@
     <android.support.v7.widget.CardView
         android:id="@+id/recycler_card_people"
         style="@style/CardView.Light"
+        android:layout_below="@id/recycler_card_dinosaur"
         android:layout_margin="8dp"
         android:layout_width="match_parent"
         android:layout_height="150dp"
@@ -118,6 +132,7 @@
     <android.support.v7.widget.CardView
         android:id="@+id/recycler_card_events"
         style="@style/CardView.Light"
+        android:layout_below="@id/recycler_card_people"
         android:layout_margin="8dp"
         android:layout_width="match_parent"
         android:layout_height="150dp"

@@ -4,6 +4,10 @@ import java.util.ArrayList;
 
 public class DinoCollectionArray extends ArrayList {
     private ArrayList<dinosaur> Dinosaurs = new ArrayList<>();
+    private ArrayList<people> People = new ArrayList<>();
+    private ArrayList<locations> Location = new ArrayList<>();
+    private ArrayList<sublocations> SubLocations = new ArrayList<>();
+    private ArrayList<event> Events = new ArrayList<>();
 
     public ArrayList getDinosaurList() {
         Dinosaurs.add(new dinosaur(1, "Tyranosaurus Rex", R.drawable.trex,
@@ -146,5 +150,179 @@ public class DinoCollectionArray extends ArrayList {
         return Dinosaurs;
     }
 
+    public ArrayList getPeopleList() {
+        People.add(new people(1,"Dr. Alan Grant",R.drawable.alangrant, "One, Three",
+                "Protagonist",
+                "Sam Neill",
+                "Dr. Grant was first introduced as an archaeologist in Montana digging " +
+                        "for Velociraptor fossils. He is approached by John Hammond in an attempt to " +
+                        "have Dr. Grant sign off on the unbelievable Jurassic Park. Through the " +
+                        "series of films, Dr. Grant transitions from wide-eyed awe to much more " +
+                        "cynical and standoffish."));
+        People.add(new people(2,"Dr. Ellie Satler",R.drawable.elliesatler, "One, Three",
+                "Protagonist",
+                "Laura Dern",
+                "Dr. Satler is a Paleobotanist who is introduced with Dr. Grant in " +
+                        "Montana. In the first film Dr. Satler learns that the team behind Jurassic Park " +
+                        "hadn't actually taken into consideration how the island itself wasn't habitable" +
+                        " for the dinosaurs they created, as some of the plant life was actually toxic."));
+        People.add(new people(3,"Dr. Ian Malcolm", R.drawable.ianmalcolm, "One, Two, Fallen",
+                "Protagonist",
+                "Jeff Goldblum",
+                "Dr. Malcolm is one of the main characters in the first films, and acts " +
+                        "as the ironic commentator through much of the films. He is a brilliant " +
+                        "mathematician who specialized in chaos theory. Based on \'chaos theory\' Malcolm " +
+                        "is able to make several predictions about the inherent dangers and ultimate failures " +
+                        "of trying to control nature through genetic power."));
+        People.add(new people(4, "Dr. Henry Wu", R.drawable.henrywu, "One, World, Fallen",
+                "Bystander / Antagonist",
+                "B.D. Wong",
+                "Dr. Wu was the chief genetic engineer in Jurassic Park, and takes great pride" +
+                        " in what he has accomplished. After the havoc on Isla Nublar, he believes that there" +
+                        " simply not enough control. He felt that when the dinosaurs proved to be " +
+                        "breeding on the island, that was a \"tremendous validation of his work.\"" +
+                        " It's this belief that motivates Dr. Wu to further his research in Jurassic World and" +
+                        " eventually engineer the Indominus Rex."));
+        People.add(new people(5,"John Hammond", R.drawable.johnhammond,"One, Two",
+                "Bystander / Antagonist",
+                "Richard Attenborough",
+                "John Hammond is the founder of InGen, and believes that his dream of " +
+                        "creating a park that encourages every attendee to stop in wonder and awe of " +
+                        "the scientific reality of dinosaurs walking on the earth again. Hammond is " +
+                        "a kind, jovial and charismatic individual. Although his intent seemed to be " +
+                        "pure-of-heart, his vision turned out to be a truly dangerous idea."));
+        People.add(new people(6, "Paul Kirby", R.drawable.paulkirby,
+                "Three",
+                "Bystander / Protagonist",
+                "William H. Macy",
+                "Mr. Kirby, along with his ex-wife, Amanda, pose as a wealthy couple to lure " +
+                        "Dr. Grant onto Isla Sorna under the facade of a sight-seeing aerial tour. Ultimately, " +
+                        "Paul's goal is to land on the island in search of his missing son. After the group is" +
+                        " attacked by a Spinosaurus on the river, Paul uses himself as bait so the others can escape. " +
+                        "Although he finds his son, they all barely survive the island if not for the actions of" +
+                        "Dr. Satler who sends in the US Navy and Marines when she receives a call from Dr. Grant on a sat-phone and hears a dinosaur roar."));
+        People.add(new people(7, "Billy Brennan", R.drawable.billybrennan,
+                "Three",
+                "Protagonist",
+                "Alessandro Nivola",
+                "Billy is an overenthusiastic graduate student who works at Dr. Grant's " +
+                        "dig site in the third film. Billy accompanies Dr. Grant on the expedition " +
+                        "to Isla Sorna, and while there decides to steal a collection of Velociraptor " +
+                        "eggs in the hopes that he could sell them to help fund Dr. Grant's dig. Although his actions" +
+                        " were noble in his mind, it caused the Raptors to trap the group in order to retrieve the eggs."));
+        People.add(new people(8, "Owen Grady", R.drawable.owengrady,
+                "World, Fallen",
+                "Protagonist",
+                "Chris Pratt",
+                "Owen is introduced as an on-site staff at Jurassic World. Formerly in " +
+                        "the United States Navy, Owen currently conducts behavioral research on the " +
+                        "parks pack of Velociraptors. Owen has trained the raptors since they hatched " +
+                        "thus he was able to imprint on them and has created personal relationships with them -" +
+                        "specifically on the pack leader \'Blue\'. Owen criticizes the genetic modification" +
+                        " of the dinosaurs, and openly disagrees with the paddock design of Indominus Rex."));
+        People.add(new people(9, "Claire Dearing", R.drawable.clairedearing,
+                "World, Fallen",
+                "Protagonist",
+                "Bryce Dallas Howard",
+                "As Jurassic World's work-aholic operations manager, Claire is seen initially as" +
+                        " part of the problem, since she only sees the dinosaurs as an attraction rather " +
+                        "than a living, breathing creature. Through her time in the film, she begins to realize " +
+                        "that there is more to life than her position at Jurassic World, after her two " +
+                        "visiting nephews become lost in the park after the Indominus Rex escapes."));
+        return People;
+    }
 
+    public ArrayList getLocationList() {
+        Location.add(new locations("Isla Nublar",
+                "Costa Rica",
+                "One, World"));
+        Location.add(new locations("Isla Sorna",
+                "Costa Rica",
+                "Two, Three"));
+        return Location;
+    }
+
+    public ArrayList getSublocationList() {
+        SubLocations.add(new sublocations("Brachiosaurus Enclosure",
+                "Isla Nublar - Central",
+                "One",
+                R.drawable.brach_map, R.drawable.brach_icon));
+        SubLocations.add(new sublocations("Gallimimus Enclosure",
+                "Isla Nublar - South",
+                "One",
+                R.drawable.gallimimus_map, R.drawable.gallimimus_icon));
+        SubLocations.add(new sublocations("Triceratops Enclosure",
+                "Isla Nublar - Central",
+                "One",
+                R.drawable.triceratops_map, R.drawable.triceratops_icon));
+        SubLocations.add(new sublocations("Parasaurolophus Enclosure",
+                "Isla Nublar - Central",
+                "One",
+                R.drawable.parasaur_map, R.drawable.parasaur_icon));
+        SubLocations.add(new sublocations("Tyrannosaurus Rex Enclosure",
+                "Isla Nublar - East",
+                "One",
+                R.drawable.rex_map, R.drawable.rex_icon));
+        SubLocations.add(new sublocations("Velociraptor Enclosure",
+                "Isla Nublar - West (Main Compound)",
+                "One",
+                R.drawable.raptor_map, R.drawable.raptor_icon));
+        SubLocations.add(new sublocations("Dilophosaurus Enclosure",
+                "Isla Nublar - East",
+                "One",
+                R.drawable.diloph_map, R.drawable.diloph_icon));
+        SubLocations.add(new sublocations("Herrerasaurus Enclosure",
+                "Isla Nublar - West",
+                "One",
+                R.drawable.herra_map, R.drawable.herra_icon));
+        SubLocations.add(new sublocations("Baryonyx Enclosure",
+                "Isla Nublar - South",
+                "One",
+                R.drawable.baryonyx_map, R.drawable.baryonyx_icon));
+        SubLocations.add(new sublocations("Visitor Center",
+                "Isla Nublar - West (Main Compound)",
+                "One",
+                R.drawable.visitor_map, R.drawable.visitor_icon));
+        SubLocations.add(new sublocations("Port",
+                "Isla Nublar - North & East",
+                "One",
+                R.drawable.port_map, R.drawable.port_icon));
+        SubLocations.add(new sublocations("Helipad",
+                "Isla Nublar - South",
+                "One",
+                R.drawable.helipad_map, R.drawable.helipad_icon));
+        return SubLocations;
+    }
+
+    public ArrayList<event> getEvents() {
+        Events.add(new event(R.drawable.nublar_incident, 1992, "Isla Nublar Incident",
+                "Robert Muldoon", "Isla Nublar - Containment Pen",
+                "Jurassic Park", "Due to the growing number of incidents involving " +
+                "the park's Velociraptors; it was decided that they would be moved from an open " +
+                "paddock to the more structurally sound Velociraptor Pen in the Main Compound. During" +
+                " the move, late at night while transplanting the largest of the raptors the crate " +
+                "where the Raptor was confined was jostled and Jophery was pulled inside by the raptor."));
+        Events.add(new event(R.drawable.park_incident, 1993, "Tyrannasaurus Escape",
+                "Dr. Alan Grant, Tim Murphy, Lex Murphy, Dr. Ian Malcolm", "Isla Nublar - Tyrannasaurus Paddock",
+                "Jurassic Park", "Due to Dennis Nedry's industrial sabotage, Jurassic Park's " +
+                "security is crippled and all of the main systems are taken offline. While the system is down " +
+                "most of the perimiter and paddock fences are taken offline, leaving them un-electrified. " +
+                "During this time while the visiting team is trapped within their jeeps, the Tyrannasaur " +
+                "crashes through his paddock fence."));
+        Events.add(new event(R.drawable.nedry_incident,1993, "Dilophosaurus Attack",
+                "Dennis Nedry", "Isla Nublar - Access Road", "Jurassic Park",
+                "While attempting to escape Jurassic Park with his theft of dozens of Dinosaur" +
+                        " Embryos, Dennis Nedry becomes lost as a massive storm whips through the park. " +
+                        "Nedry slips and falls down a rocky waterfall before encountering a couple Dilophosaurs" +
+                        " who have surrounded him. As he thinks that he has escaped he finds that one " +
+                        "of the Dilophosaurs has climbed into his Jeep. He is attacked while the canister of " +
+                        "Embryos is buried in the silt and gravel."));
+        Events.add(new event(R.drawable.bowman_incident,1996, "Compsognathus Attack",
+                "Bowman Family", "Isla Sorna - Coast", "The Lost World",
+                "While sailing on a family yacht, the Bowman family is vacationing on the beach. While" +
+                        " her parents are enjoying the sun and sand, Cindy wanders across the beach with her " +
+                        "sandwich before stumbling upon a friendly looking Compsognathus. She offers some of her " +
+                        "to which the Compy eats before a dozen more Compy's appear and attack her."));
+        return Events;
+    }
 }
