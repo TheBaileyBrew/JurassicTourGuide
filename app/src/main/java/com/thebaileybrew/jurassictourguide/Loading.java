@@ -16,12 +16,15 @@ import android.widget.TextSwitcher;
 import android.widget.TextView;
 import android.widget.ViewSwitcher;
 
+import java.sql.Array;
+import java.util.ArrayList;
+
 import me.zhanghai.android.materialprogressbar.MaterialProgressBar;
 
 public class Loading extends AppCompatActivity {
 
     ValueAnimator mProgressAnimator, mProgressAnimatorTwo, mProgressAnimatorThree;
-    String textMessages[] = getResources().getStringArray(R.array.textMessages);
+    String textMessages[];
     //int messageCount = textMessages.length;
     Animation in, out;
     TextView textViewSwitch;
@@ -29,6 +32,7 @@ public class Loading extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        textMessages = getResources().getStringArray(R.array.textMessages);
         setContentView(R.layout.now_loading);
         MaterialProgressBar progressBarBottom = findViewById(R.id.jurassic_progress_background_bottom);
         MaterialProgressBar progressBar = findViewById(R.id.jurassic_progress);
