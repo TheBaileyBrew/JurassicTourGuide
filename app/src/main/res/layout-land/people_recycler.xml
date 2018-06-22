@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/people_recycler"
+        android:layout_width="400dp"
+        android:layout_height="270dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/standard_margin16"
+        android:layout_marginRight="@dimen/standard_margin16"
+        android:layout_marginTop="@dimen/standard_margin16"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/people_detail_listing"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/people_recycler"
+        android:layout_margin="@dimen/standard_margin16"
+        android:layout_toLeftOf="@id/people_recycler"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/people"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/standard_text32" />
+
+        <TextView
+            android:id="@+id/people_actor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin8"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/standard_text24" />
+
+        <TextView
+            android:id="@+id/people_classification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin8"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/standard_text24" />
+
+        <TextView
+            android:id="@+id/people_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin8"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/standard_text24" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/people_detail_listing"
+        android:layout_marginLeft="@dimen/standard_margin16"
+        android:layout_marginRight="@dimen/standard_margin16"
+        android:layout_marginTop="@dimen/small_margin8"
+        android:scrollbarSize="3dp"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/people_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/small_margin8"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/standard_text24" />
+    </ScrollView>
+
+</RelativeLayout>
+
+

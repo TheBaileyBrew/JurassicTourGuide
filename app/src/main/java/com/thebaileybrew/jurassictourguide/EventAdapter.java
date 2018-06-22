@@ -82,6 +82,8 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHol
             eventImage = itemView.findViewById(R.id.event_image);
             eventFilm = itemView.findViewById(R.id.event_people);
         }
+
+
     }
 
 

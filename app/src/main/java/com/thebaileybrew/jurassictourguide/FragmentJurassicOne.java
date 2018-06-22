@@ -4,14 +4,9 @@ import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
-
-import java.util.ArrayList;
 
 public class FragmentJurassicOne extends Fragment implements View.OnClickListener{
 
@@ -32,6 +27,7 @@ public class FragmentJurassicOne extends Fragment implements View.OnClickListene
         dinosaurs.setOnClickListener(this);
         people.setOnClickListener(this);
         events.setOnClickListener(this);
+
         return rootView;
     }
 
@@ -55,8 +51,9 @@ public class FragmentJurassicOne extends Fragment implements View.OnClickListene
                 v.getContext().startActivity(openPeople);
                 break;
             case R.id.recycler_card_events:
+                final String eventMovieSelection = "Jurassic Park";
                 Intent openEvents = new Intent(v.getContext(),EventMainFragActivity.class);
-                openEvents.putExtra("FromMovie", movieSelection);
+                openEvents.putExtra("FromMovie", eventMovieSelection);
                 v.getContext().startActivity(openEvents);
                 break;
         }

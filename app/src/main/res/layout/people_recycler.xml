@@ -17,15 +17,15 @@
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginBottom="@dimen/standard_margin16"
+        android:layout_marginLeft="@dimen/standard_margin16"
+        android:layout_marginRight="@dimen/standard_margin16"
         android:orientation="vertical">
         <TextView
             android:id="@+id/people"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="36dp"
+            android:textSize="@dimen/standard_text32"
             android:textColor="@color/colorPrimary"
             android:shadowDx="2"
             android:shadowDy="2"
@@ -33,37 +33,37 @@
             android:shadowColor="@color/colorPrimaryDark"/>
         <TextView
             android:id="@+id/people_actor"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/small_margin8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
+            android:textSize="@dimen/standard_text24"
             android:textColor="@color/colorPrimaryDark"/>
         <TextView
             android:id="@+id/people_classification"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/small_margin8"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" 
-            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/standard_text24"
             android:textColor="@color/colorPrimaryDark"/>
         <TextView
             android:id="@+id/people_location"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/small_margin8"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" 
-            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/standard_text24"
             android:textColor="@color/colorPrimaryDark"/>
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/small_margin8"
             android:scrollbars="vertical"
             android:scrollbarSize="3dp">
             <TextView
                 android:id="@+id/people_details"
-                android:layout_marginRight="8dp"
+                android:layout_marginRight="@dimen/small_margin8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="24sp"
+                android:textSize="@dimen/standard_text24"
                 android:textColor="@color/colorPrimaryDark"/>
         </ScrollView>
         

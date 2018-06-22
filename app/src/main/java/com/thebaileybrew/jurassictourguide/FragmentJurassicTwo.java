@@ -41,6 +41,7 @@ public class FragmentJurassicTwo extends Fragment implements View.OnClickListene
         String movieSelection = "Two";
         switch(v.getId()) {
             case R.id.recycler_card_locations:
+                Toast.makeText(v.getContext(), "Coming Soon...", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.recycler_card_dinosaur:
                 Intent openDinosaurs = new Intent(v.getContext(),DinosaurActivity.class);
@@ -53,6 +54,10 @@ public class FragmentJurassicTwo extends Fragment implements View.OnClickListene
                 v.getContext().startActivity(openPeople);
                 break;
             case R.id.recycler_card_events:
+                final String eventMovieSelection = "The Lost World";
+                Intent openEvents = new Intent(v.getContext(), EventMainFragActivity.class);
+                openEvents.putExtra("FromMovie", eventMovieSelection);
+                v.getContext().startActivity(openEvents);
                 break;
         }
     }

@@ -1,10 +1,10 @@
 package com.thebaileybrew.jurassictourguide;
 
 import android.animation.Animator;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -22,7 +22,10 @@ public class EventActivity extends Fragment {
 
     private FanLayoutManager fanLayoutManager;
     private EventAdapter adapter;
+    private ArrayList<event> Temp = new ArrayList<>();
     private ArrayList<event> Events = new ArrayList<>();
+    private String film;
+    private String thisMovieSelection;
 
     public static EventActivity newInstance() {
         Bundle args = new Bundle();
@@ -34,6 +37,7 @@ public class EventActivity extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        thisMovieSelection = getActivity().getIntent().getExtras().getString("FromMovie");
     }
 
     @Override
@@ -43,11 +47,7 @@ public class EventActivity extends Fragment {
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        DinoCollectionArray eventList = new DinoCollectionArray();
-        Events = eventList.getEvents();
-
         final RecyclerView recyclerView = view.findViewById(R.id.event_recycler);
-
         FanLayoutManagerSettings fanLayoutManagerSettings = FanLayoutManagerSettings
                 .newBuilder(getContext())
                 .withFanRadius(true)
@@ -57,10 +57,8 @@ public class EventActivity extends Fragment {
                 .build();
 
         fanLayoutManager = new FanLayoutManager(getContext(), fanLayoutManagerSettings);
-
         recyclerView.setLayoutManager(fanLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-
         adapter = new EventAdapter(getContext(), Events);
         adapter.setOnItemClickListener(new EventAdapter.OnItemClickListener() {
             @Override
@@ -94,12 +92,18 @@ public class EventActivity extends Fragment {
         });
         recyclerView.setAdapter(adapter);
         recyclerView.setChildDrawingOrderCallback(new FanChildDrawingOrderCallback(fanLayoutManager));
+        DinoCollectionArray eventList = new DinoCollectionArray();
+        Temp = eventList.getEvents();
+        for (event eventItem : Temp) {
+            if (eventItem.getEventFilm().equals(thisMovieSelection)) {
+                Events.add(eventItem);
+            }
+        }
     }
-
-
     public void onClick(int position) {
         Toast.makeText(getContext(), "You've selected an item...", Toast.LENGTH_SHORT).show();
         FullEventDetailsFragment fragment = FullEventDetailsFragment.newInstance(adapter.getModelByPos(position));
+        Events.clear();
         getActivity().getSupportFragmentManager()
                 .beginTransaction()
                 .replace(R.id.root, fragment)

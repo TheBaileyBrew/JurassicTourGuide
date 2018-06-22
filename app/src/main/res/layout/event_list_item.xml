@@ -6,22 +6,22 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="4dp"
-        android:paddingBottom="4dp"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
+        android:paddingBottom="@dimen/small_margin6"
+        android:paddingEnd="@dimen/small_margin8"
+        android:paddingLeft="@dimen/small_margin8"
+        android:paddingRight="@dimen/small_margin8"
+        android:paddingStart="@dimen/small_margin8"
+        android:paddingTop="@dimen/small_margin6"
         tools:background="@color/colorPrimaryFade">
         <TextView
             android:id="@+id/event_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:ellipsize="marquee"
-            android:singleLine="true"
-            android:textSize="22sp"
+            android:ellipsize="end"
             android:textStyle="bold"
+            android:singleLine="true"
+            android:textSize="@dimen/standard_text16"
             android:text="Isla Nublar Incident"/>
         <TextView
             android:id="@+id/event_location"
@@ -29,9 +29,9 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/event_name"
-            android:ellipsize="marquee"
+            android:ellipsize="end"
             android:singleLine="true"
-            android:textSize="16sp"
+            android:textSize="@dimen/standard_text16"
             android:text="Isla Nublar - Velociraptor Pen"/>
         <ImageView
             android:id="@+id/event_image"
@@ -45,17 +45,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/small_margin8"
             android:layout_below="@id/event_image"
-            android:text="These are the people who witnessed"/>
+            android:text="  "
+            android:textSize="@dimen/standard_text12" />
         <TextView
             android:id="@+id/event_details"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/small_margin8"
             android:layout_below="@id/event_people"
-            android:text="Lots of text should go here because the quick brown fox jumped over the lazy dog before he could stop."/>
+            android:text="  " />
     </RelativeLayout>
 
 </android.support.v7.widget.CardView>

@@ -1,170 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/recycler_card_locations"
-        style="@style/CardView.Light"
-        android:layout_margin="8dp"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_alignParentTop="true"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="8dp">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <ImageView
-                android:id="@+id/locations_section_background"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/park_two_locations"/>
-            <ImageView
-                android:id="@+id/locations_section_background_fade"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/colorFadeBG"/>
-            <TextView
-                android:id="@+id/locations_section_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:textColor="@color/colorPrimary"
-                android:text="LOCATIONS"
-                android:textSize="42sp"
-                android:shadowColor="@color/colorAccent"
-                android:shadowDy="6"
-                android:shadowDx="6"
-                android:shadowRadius="4"/>
-            <ImageView
-                android:id="@+id/coming_soon"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                android:layout_marginTop="-5dp"
-                android:layout_marginRight="-7dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentTop="true"
-                android:src="@drawable/comingsoon" />
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/recycler_card_dinosaur"
-        style="@style/CardView.Light"
-        android:layout_margin="8dp"
-        android:layout_below="@id/recycler_card_locations"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        app:cardCornerRadius="6dp"
-        app:cardElevation="8dp">
-        <RelativeLayout
+        <android.support.v7.widget.CardView
+            android:id="@+id/recycler_card_locations"
+            style="@style/CardView.Light"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <ImageView
-                android:id="@+id/dino_section_background"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/park_two_dinosaurs"/>
-            <ImageView
-                android:id="@+id/dino_section_background_fade"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/colorFadeBG"/>
-            <TextView
-                android:id="@+id/dino_section_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:textColor="@color/colorPrimary"
-                android:text="DINOSAURS"
-                android:textSize="42sp"
-                android:shadowColor="@color/colorAccent"
-                android:shadowDy="6"
-                android:shadowDx="6"
-                android:shadowRadius="4"/>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+            android:layout_height="@dimen/layout_height120"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/small_margin8"
+            app:cardCornerRadius="@dimen/small_margin8"
+            app:cardElevation="@dimen/small_margin8">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/recycler_card_people"
-        style="@style/CardView.Light"
-        android:layout_below="@id/recycler_card_dinosaur"
-        android:layout_margin="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        app:cardCornerRadius="6dp"
-        app:cardElevation="8dp">
-        <RelativeLayout
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/locations_section_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/park_two_locations" />
+
+                <ImageView
+                    android:id="@+id/locations_section_background_fade"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorFadeBG" />
+
+                <TextView
+                    android:id="@+id/locations_section_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:shadowColor="@color/colorAccent"
+                    android:shadowDx="6"
+                    android:shadowDy="6"
+                    android:shadowRadius="4"
+                    android:text="LOCATIONS"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/large_text40" />
+
+                <ImageView
+                    android:id="@+id/coming_soon"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="-7dp"
+                    android:layout_marginTop="-5dp"
+                    android:src="@drawable/comingsoon" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/recycler_card_dinosaur"
+            style="@style/CardView.Light"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <ImageView
-                android:id="@+id/people_section_background"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/park_two_people"/>
-            <ImageView
-                android:id="@+id/people_section_background_fade"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/colorFadeBG"/>
-            <TextView
-                android:id="@+id/people_section_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:textColor="@color/colorPrimary"
-                android:text="NOTABLE PEOPLE"
-                android:textSize="42sp"
-                android:shadowColor="@color/colorAccent"
-                android:shadowDy="6"
-                android:shadowDx="6"
-                android:shadowRadius="4"/>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+            android:layout_height="@dimen/layout_height120"
+            android:layout_below="@id/recycler_card_locations"
+            android:layout_margin="@dimen/small_margin8"
+            app:cardCornerRadius="@dimen/small_margin6"
+            app:cardElevation="@dimen/small_margin8">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/recycler_card_events"
-        style="@style/CardView.Light"
-        android:layout_below="@id/recycler_card_people"
-        android:layout_margin="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        app:cardCornerRadius="6dp"
-        app:cardElevation="8dp">
-        <RelativeLayout
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/dino_section_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/park_two_dinosaurs" />
+
+                <ImageView
+                    android:id="@+id/dino_section_background_fade"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorFadeBG" />
+
+                <TextView
+                    android:id="@+id/dino_section_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:shadowColor="@color/colorAccent"
+                    android:shadowDx="6"
+                    android:shadowDy="6"
+                    android:shadowRadius="4"
+                    android:text="DINOSAURS"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/large_text40" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/recycler_card_people"
+            style="@style/CardView.Light"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <ImageView
-                android:id="@+id/events_section_background"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/park_two_events"/>
-            <ImageView
-                android:id="@+id/events_section_background_fade"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/colorFadeBG"/>
-            <TextView
-                android:id="@+id/events_section_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:textColor="@color/colorPrimary"
-                android:text="IMPORTANT EVENTS"
-                android:textSize="42sp"
-                android:shadowColor="@color/colorAccent"
-                android:shadowDy="6"
-                android:shadowDx="6"
-                android:shadowRadius="4"/>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+            android:layout_height="@dimen/layout_height120"
+            android:layout_below="@id/recycler_card_dinosaur"
+            android:layout_margin="@dimen/small_margin8"
+            app:cardCornerRadius="@dimen/small_margin6"
+            app:cardElevation="@dimen/small_margin8">
 
-</LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/people_section_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/park_two_people" />
+
+                <ImageView
+                    android:id="@+id/people_section_background_fade"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorFadeBG" />
+
+                <TextView
+                    android:id="@+id/people_section_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:shadowColor="@color/colorAccent"
+                    android:shadowDx="6"
+                    android:shadowDy="6"
+                    android:shadowRadius="4"
+                    android:text="NOTABLE PEOPLE"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/large_text40" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/recycler_card_events"
+            style="@style/CardView.Light"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height120"
+            android:layout_below="@id/recycler_card_people"
+            android:layout_margin="@dimen/small_margin8"
+            app:cardCornerRadius="@dimen/small_margin6"
+            app:cardElevation="@dimen/small_margin8">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/events_section_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/park_two_events" />
+
+                <ImageView
+                    android:id="@+id/events_section_background_fade"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorFadeBG" />
+
+                <TextView
+                    android:id="@+id/events_section_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:shadowColor="@color/colorAccent"
+                    android:shadowDx="6"
+                    android:shadowDy="6"
+                    android:shadowRadius="4"
+                    android:text="IMPORTANT EVENTS"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/large_text40" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

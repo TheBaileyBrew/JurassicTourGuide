@@ -323,6 +323,76 @@ public class DinoCollectionArray extends ArrayList {
                         " her parents are enjoying the sun and sand, Cindy wanders across the beach with her " +
                         "sandwich before stumbling upon a friendly looking Compsognathus. She offers some of her " +
                         "to which the Compy eats before a dozen more Compy's appear and attack her."));
+        Events.add(new event(R.drawable.rescue_incident, 1997, "Rescue on Isla Sorna",
+                "Dr. Ian Malcolm, Dr. Sarah Harding, Eddie Carr, Nick Van Owen",
+                "Isla Sorna", "The Lost World",
+                "After meeting with a bed-ridden John Hammond, Dr. Malcolm learns that ownership " +
+                        "of InGen has passed to Hammond's nephew, Peter Ludlow. As a last ditch effort to " +
+                        "catalog and research how the dinosaurs on 'site b' were able to survive, Hammond " +
+                        "explains that Sarah Harding has already left for the island. Malcolm joins the " +
+                        "expedition that Hammond intended to create, but declares that this will be a " +
+                        "rescue mission rather than a research trip."));
+        Events.add(new event(R.drawable.hunt_incident, 1997, "Capturing the Tyrannasaurus",
+                "Peter Ludlow, Roland Tembo, Dr. Ian Malcolm", "Isla Sorna - Central",
+                "The Lost World", "Opposed to John Hammond's research expedition, Peter Ludlow, the new " +
+                "CEO of InGen decides to exploit the surviving dinosaurs on Isla Sorna so that InGen doesn't " +
+                "go bankrupt. Ludlow puts together a team of hunters and trackers to catalog and capture dozens " +
+                "of dinosaurs with the goal of returning them to a new park being built in San Diego. " +
+                "While on the hunt, Roland tracks and eventually captures the mighty Tyrannasaurus Rex."));
+        Events.add(new event(R.drawable.sandiego_incident, 1997, "Havoc in San Diego",
+                "Dr. Ian Malcolm, Sarah Harding", "San Diego, California",
+                "The Lost World", "After capturing the Tyrannasaurus Rex, Ludlow has " +
+                "the carnivorous monster transported to the United States with the intent of it being " +
+                "the star attraction at the new park in San Diego. Yet, Ludlow's ship had a few problems " +
+                "while out at sea, and it appears that the T. Rex had awoken from it's drug-induced " +
+                "sleep and attacked the crew. Although it was trapped below deck, it was inadvertently " +
+                "released and began rampaging through the streets of San Diego."));
+        Events.add(new event(R.drawable.dinobreed_incident, 1997, "New Species Bred",
+                "Unnamed InGen Scientists", "Isla Sorna", "Jurassic Park III",
+                "In secret, several dinosaurs were bred and cloned on Isla Sorna. These cloning " +
+                        "experiments where entirely illegal, as the Gene Guard Act was passed a few months earlier. " +
+                        "In direct violation of the law, the scientists bred dinosaurs like Ankylosaurus, Ceratosaurus," +
+                        " Corythosaurus and Spinosaurus. These dinosaurs are bred without consent from " +
+                        "InGen or the new owner Masrani Global - but rather directed by Henry Wu."));
+        Events.add(new event(R.drawable.worldplan_incident, 1998, "Jurassic World Planning",
+                "Simon Masrani", "Masrani Global", "Jurassic World",
+                "After Masrani Global offers InGen a corporate buy out, Simon Masrani declares " +
+                        "that his old friend, John Hammond, would have wanted him to bring his dream " +
+                        "to fruition by developing and building Jurassic World. Thus the planning and " +
+                        "conceptual designs are started."));
+        Events.add(new event(R.drawable.kirby_incident, 2001, "Rescue of Eric Kirby",
+                "Dr. Alan Grant, Eric Kirby, Peter Kirby", "Isla Sorna",
+                "Jurassic Park III", "After Erik survives a crash landing on Isla Sorna " +
+                "while on a parasailing adventure with his step-father, Ben, a rescue mission is created " +
+                "and Dr. Grant is tricked into joining the expedition. Erik's parents, now separated, " +
+                "decide that they need to get to the island at all costs. After the plane lands, it's discovered " +
+                "that there are even more dangerous things on this island."));
+        Events.add(new event(R.drawable.raptor_incident, 2001, "Hunted by Velociraptors",
+                "Dr. Alan Grant, Billy Brennan", "Isla Sorna",
+                "Jurassic Park III", "After being stranded on the island after their " +
+                "plane crashes through the jungle, Billy finds a nest of Velociraptor eggs and thinks that " +
+                "he could help Dr. Grant's dig site by bringing them home and selling them. Although his intentions " +
+                "had slight nobility to them, it caused the pack of raptors to track and trap the team in a clearing. " +
+                "It appears as though all they want are the eggs, so Dr. Grant returns the eggs freely."));
+        Events.add(new event(R.drawable.masrani_incident, 2004, "Jurassic World Has New Dinosaurs",
+                "Masrani Global Employees", "Isla Nublar", "Jurassic World",
+                "After jumping through several hoops, and getting the Gene Guard Act re-written, Masrani " +
+                        "Global is allowed to breed new dinosaurs. During this process the dinosaurs from " +
+                        "Isla Sorna are transported to Isla Nublar. Now as the park is finally completed, Masrani " +
+                        "begins the process of creating new attractions under the supervision of Dr. Henry Wu."));
+        Events.add(new event(R.drawable.irex_incident, 2009, "The Birth of a Hybrid",
+                "Dr. Henry Wu", "Isla Nublar", "Jurassic World",
+                "Through several attempts at genetic modification, Dr. Wu has been given full authorization " +
+                        "to breed hybrid dinosaurs to bring new life and visitors to the park. During Dr. Wu's " +
+                        "experiments, the Indominus Rex is hatched. The Indominus was genetical modified from " +
+                        "Gigantosaurus, Tyrannosaurus Rex, Velociraptor, Pit Vipers, Tree Frogs, Cuttlefish, " +
+                        "and an unidentified number of modern animals."));
+        Events.add(new event(R.drawable.world_incident, 1997, "Jurassic World Incident",
+                "Owen Grady, Claire Dearing", "Isla Nublar", "Jurassic World",
+                "After requesting Owen's input on any potential flaws in Paddock 11, Owen and Claire fear that " +
+                        "the Indominus Rex had climbed out of the paddock, only to discover that the I.Rex " +
+                        "had a sort of active camoflauge and could hide itself from heat-vision. While Owen " +
+                        "escapes, the I.Rex does as well and begins searching for more food."));
         return Events;
     }
 }

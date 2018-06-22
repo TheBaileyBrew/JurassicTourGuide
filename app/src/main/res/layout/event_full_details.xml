@@ -2,12 +2,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="4dp"
-    android:paddingBottom="4dp"
-    android:paddingStart="8dp"
-    android:paddingEnd="8dp"
-    android:paddingLeft="8dp"
-    android:paddingRight="8dp">
+    android:background="@color/colorFadeBG"
+    android:paddingBottom="@dimen/small_margin6"
+    android:paddingEnd="@dimen/small_margin8"
+    android:paddingLeft="@dimen/small_margin8"
+    android:paddingRight="@dimen/small_margin8"
+    android:paddingStart="@dimen/small_margin8"
+    android:paddingTop="@dimen/small_margin6">
     <ImageView
         android:id="@+id/event_image"
         android:layout_width="wrap_content"
@@ -22,8 +23,9 @@
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal"
         android:layout_below="@id/event_image"
-        android:textSize="48sp"
+        android:textColor="@color/colorPrimary"
         android:textStyle="bold"
+        android:textSize="@dimen/large_text48"
         android:text="Isla Nublar Incident"/>
     <TextView
         android:id="@+id/event_location"
@@ -32,13 +34,14 @@
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal"
         android:layout_below="@id/event_name"
-        android:textSize="40sp"
+        android:textColor="@color/colorPrimaryFade"
+        android:textSize="@dimen/large_text40"
         android:text="Isla Nublar - Velociraptor Pen"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginLeft="@dimen/standard_margin16"
+        android:layout_marginRight="@dimen/standard_margin16"
         android:layout_below="@id/event_location"
         android:scrollbars="vertical"
         android:scrollbarSize="3dp">
@@ -51,17 +54,19 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
-                android:layout_marginTop="4dp"
-                android:textSize="32sp"
+                android:layout_marginTop="@dimen/small_margin6"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/standard_text32"
                 android:text="These are the people who witnessed"/>
             <TextView
                 android:id="@+id/event_details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="@dimen/small_margin6"
                 android:layout_below="@id/event_people"
-                android:textSize="24sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/standard_text24"
                 android:text="Lots of text should go here because the quick brown fox jumped over the lazy dog before he could stop."/>
         </RelativeLayout>
     </ScrollView>

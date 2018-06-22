@@ -41,6 +41,7 @@ public class FragmentJurassicThree extends Fragment implements View.OnClickListe
         String movieSelection = "Three";
         switch(v.getId()) {
             case R.id.recycler_card_locations:
+                Toast.makeText(v.getContext(), "Coming Soon...", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.recycler_card_dinosaur:
                 Intent openDinosaurs = new Intent(v.getContext(),DinosaurActivity.class);
@@ -53,6 +54,10 @@ public class FragmentJurassicThree extends Fragment implements View.OnClickListe
                 v.getContext().startActivity(openPeople);
                 break;
             case R.id.recycler_card_events:
+                final String eventMovieSelection = "Jurassic Park III";
+                Intent openEvents = new Intent(v.getContext(), EventMainFragActivity.class);
+                openEvents.putExtra("FromMovie", eventMovieSelection);
+                v.getContext().startActivity(openEvents);
                 break;
         }
     }
