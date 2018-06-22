@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
-    android:id="@+id/dino_card_expander"
+<android.support.v7.widget.CardView xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
@@ -10,6 +9,7 @@
     android:layout_marginRight="@dimen/small_margin6"
     android:layout_marginTop="@dimen/small_margin6"
     app:cardElevation="8dp"
+    android:id="@+id/dino_card_expander"
     app:cardCornerRadius="10dp">
     <com.silencedut.expandablelayout.ExpandableLayout
         android:id="@+id/expandable_dino"
@@ -39,7 +39,7 @@
                 android:layout_marginTop="10dp"
                 android:textSize="@dimen/standard_text28"
                 android:textStyle="bold"
-                android:text="DINO NAME HERE"
+                tools:text="DINO NAME HERE"
                 android:shadowDx="2"
                 android:shadowDy="2"
                 android:shadowRadius="2"
@@ -49,11 +49,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/dino_image"
+                android:layout_marginStart="@dimen/small_margin6"
                 android:layout_below="@id/dino_title"
                 android:layout_marginLeft="@dimen/small_margin6"
+                android:layout_toEndOf="@id/dino_image"
                 android:layout_marginTop="@dimen/small_margin6"
                 android:textSize="@dimen/standard_text24"
-                android:text="CLASSIFICATION HERE"
+                tools:text="CLASSIFICATION HERE"
                 android:shadowDx="2"
                 android:shadowDy="2"
                 android:shadowRadius="2"
@@ -63,12 +65,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/dino_image"
+                android:layout_toEndOf="@id/dino_image"
                 android:layout_below="@id/dino_classification"
                 android:layout_marginLeft="@dimen/small_margin6"
                 android:layout_marginRight="@dimen/small_margin6"
                 android:layout_marginTop="@dimen/small_margin6"
                 android:textSize="@dimen/standard_text24"
-                android:text="Threat: "
+                tools:text="Threat: "
                 android:shadowDx="2"
                 android:shadowDy="3"
                 android:shadowRadius="1"
@@ -93,7 +96,7 @@
                 android:layout_marginRight="@dimen/standard_margin16"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
-                android:text="DINO FACTS HERE"/>
+                tools:text="DINO FACTS HERE" />
             <View
                 android:id="@+id/dino_break_stats"
                 android:layout_width="match_parent"
@@ -111,7 +114,7 @@
                 android:layout_marginRight="@dimen/standard_margin16"
                 android:layout_marginTop="@dimen/small_margin6"
                 android:textSize="@dimen/standard_text18"
-                android:text="FACT ONE"/>
+                tools:text="FACT ONE" />
             <TextView
                 android:id="@+id/dino_quick_fact_two"
                 android:layout_below="@id/dino_quick_fact_one"
@@ -121,7 +124,7 @@
                 android:layout_marginRight="@dimen/standard_margin16"
                 android:layout_marginTop="@dimen/small_margin6"
                 android:textSize="@dimen/standard_text18"
-                android:text="FACT TWO"/>
+                tools:text="FACT TWO" />
             <TextView
                 android:id="@+id/dino_quick_fact_three"
                 android:layout_below="@id/dino_quick_fact_two"
@@ -131,7 +134,7 @@
                 android:layout_marginRight="@dimen/standard_margin16"
                 android:layout_marginTop="@dimen/small_margin6"
                 android:textSize="@dimen/standard_text18"
-                android:text="FACT THREE"/>
+                tools:text="FACT THREE" />
         </RelativeLayout>
     </com.silencedut.expandablelayout.ExpandableLayout>
 </android.support.v7.widget.CardView>

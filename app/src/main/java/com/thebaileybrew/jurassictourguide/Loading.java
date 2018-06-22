@@ -21,10 +21,8 @@ import me.zhanghai.android.materialprogressbar.MaterialProgressBar;
 public class Loading extends AppCompatActivity {
 
     ValueAnimator mProgressAnimator, mProgressAnimatorTwo, mProgressAnimatorThree;
-    String textMessages[] = {"Don't go into the long grass!", "Oh, yeah. Oooh, ahhh, that's how it always starts. Then later there's running and um, screaming.",
-                "Don't move. He won't see us if we don't move...", "...Just follow the screams.",
-                "Did you read Malcolm's book?", "That thing out there... That is no dinosaur.", "Welcome to Jurassic Park"};
-    int messageCount = textMessages.length;
+    String textMessages[] = getResources().getStringArray(R.array.textMessages);
+    //int messageCount = textMessages.length;
     Animation in, out;
     TextView textViewSwitch;
 

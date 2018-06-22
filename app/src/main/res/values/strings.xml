@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">JurassicTourGuide</string>
-    <string name="jurassic_park_one">Jurassic Park</string>
-    <string name="jurassic_park_two">Jurassic Park Two</string>
-    <string name="jurassic_park_three">Jurassic Park Three</string>
-    <string name="jurassic_world">Jurassic World</string>
+    <string name="app_name" translatable="false">JurassicTourGuide</string>
+    <string name="jurassic_park_one" translatable="false">Jurassic Park</string>
+    <string name="jurassic_park_two" translatable="false">Jurassic Park Two</string>
+    <string name="jurassic_park_three" translatable="false">Jurassic Park Three</string>
+    <string name="jurassic_world" translatable="false">Jurassic World</string>
     <string name="located">Located:  </string>
     <string name="threat_level">Threat Level:  </string>
     <string name="weight">WEIGHT:  </string>
@@ -12,6 +12,19 @@
     <string name="character_details">Character Details: </string>
     <string name="films_appeared">Films Appeared: </string>
     <string name="role_in_films">Role in Films: </string>
-    <string name="portrayed_by">Portrayed By: </string>
+    <string name="portrayed_by" translatable="false">Portrayed By: </string>
     <string name="character_name">Character Name</string>
+    <string name="choose_your_location">CHOOSE A LOCATION</string>
+
+    <string-array name="textMessages">
+        <item name="0">Don't go into the long grass!</item>
+        <item name="1">Oh, yeah. Oooh, ahhh, that's how it always starts. Then later there's running and um, screaming.</item>
+        <item name="2">Don't move. He won't see us if we don't move…</item>
+        <item name="3">…Just follow the screams.</item>
+        <item name="4">Did you read Malcolm's book?</item>
+        <item name="5">That thing out there… That is no dinosaur.</item>
+        <item name="6">Welcome to Jurassic Park</item>
+
+
+    </string-array>
 </resources>
