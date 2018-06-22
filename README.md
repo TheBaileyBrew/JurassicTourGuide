@@ -12,14 +12,14 @@ By selecting an item you will be taken to that particular collection of data. Al
 The four sections of this app are: Important Locations, Dinosaurs, People and Events.
 
 
-![Picture] (readme_locations.jpg)
+! [Picture] (readme_location.jpg)
 
 
-![Picture] (readme_dinosaurs.jpg)
+! [Picture] (readme_dinolist.jpg)
 
 
-![Picture] (readme_people.jpg)
+! [Picture] (readme_people.jpg)
 
 
-![Picture] (readme_events.jpg)
+! [Picture] (readme_event.jpg)
 
