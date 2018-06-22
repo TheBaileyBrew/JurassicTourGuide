@@ -13,13 +13,3 @@ The four sections of this app are: Important Locations, Dinosaurs, People and Ev
 
 
 ! [Picture] (readme_location.jpg)
-
-
-! [Picture] (readme_dinolist.jpg)
-
-
-! [Picture] (readme_people.jpg)
-
-
-! [Picture] (readme_event.jpg)
-
