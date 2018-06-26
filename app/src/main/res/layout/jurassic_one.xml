@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -44,7 +44,7 @@
                     android:shadowDx="6"
                     android:shadowDy="6"
                     android:shadowRadius="4"
-                    android:text="LOCATIONS"
+                    android:text="@string/jurassic_one_locations_section_text_text"
                     android:textColor="@color/colorPrimary"
                     android:textSize="@dimen/large_text40" />
             </RelativeLayout>
@@ -85,7 +85,7 @@
                     android:shadowDx="6"
                     android:shadowDy="6"
                     android:shadowRadius="4"
-                    android:text="DINOSAURS"
+                    android:text="@string/jurassic_one_dino_section_text_text"
                     android:textColor="@color/colorPrimary"
                     android:textSize="@dimen/large_text40" />
             </RelativeLayout>
@@ -126,7 +126,7 @@
                     android:shadowDx="6"
                     android:shadowDy="6"
                     android:shadowRadius="4"
-                    android:text="NOTABLE PEOPLE"
+                    android:text="@string/jurassic_one_people_section_text_text"
                     android:textColor="@color/colorPrimary"
                     android:textSize="@dimen/large_text40" />
             </RelativeLayout>
@@ -167,7 +167,7 @@
                     android:shadowDx="6"
                     android:shadowDy="6"
                     android:shadowRadius="4"
-                    android:text="IMPORTANT EVENTS"
+                    android:text="@string/jurassic_one_events_section_text_text"
                     android:textColor="@color/colorPrimary"
                     android:textSize="@dimen/large_text40" />
             </RelativeLayout>

@@ -25,7 +25,7 @@ public class DinosaurActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dinosaur_recycler);
         Intent getFragIntent = getIntent();
-        String movieSelection = getFragIntent.getStringExtra("FromMovie");
+        String movieSelection = getFragIntent.getStringExtra(getString(R.string.FromMovie_Intent_String));
 
         DinoCollectionArray dinos = new DinoCollectionArray();
         Temp = dinos.getDinosaurList();

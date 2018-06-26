@@ -33,27 +33,27 @@ public class FragmentJurassicOne extends Fragment implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
-        String movieSelection = "One";
+        String movieSelection = getString(R.string.One_validation);
         switch(v.getId()) {
             case R.id.recycler_card_locations:
                 Intent openLocations = new Intent(v.getContext(),LocationActivity.class);
-                openLocations.putExtra("FromMovie", movieSelection);
+                openLocations.putExtra(getString(R.string.FromMovie_Intent_String), movieSelection);
                 v.getContext().startActivity(openLocations);
                 break;
             case R.id.recycler_card_dinosaur:
                 Intent openDinosaurs = new Intent(v.getContext(),DinosaurActivity.class);
-                openDinosaurs.putExtra("FromMovie", movieSelection);
+                openDinosaurs.putExtra(getString(R.string.FromMovie_Intent_String), movieSelection);
                 v.getContext().startActivity(openDinosaurs);
                 break;
             case R.id.recycler_card_people:
                 Intent openPeople = new Intent(v.getContext(), PeopleActivity.class);
-                openPeople.putExtra("FromMovie", movieSelection);
+                openPeople.putExtra(getString(R.string.FromMovie_Intent_String), movieSelection);
                 v.getContext().startActivity(openPeople);
                 break;
             case R.id.recycler_card_events:
-                final String eventMovieSelection = "Jurassic Park";
+                final String eventMovieSelection = getString(R.string.Jurassic_Park);
                 Intent openEvents = new Intent(v.getContext(),EventMainFragActivity.class);
-                openEvents.putExtra("FromMovie", eventMovieSelection);
+                openEvents.putExtra(getString(R.string.FromMovie_Intent_String), eventMovieSelection);
                 v.getContext().startActivity(openEvents);
                 break;
         }

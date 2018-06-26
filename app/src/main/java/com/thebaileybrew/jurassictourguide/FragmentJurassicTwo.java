@@ -38,25 +38,24 @@ public class FragmentJurassicTwo extends Fragment implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
-        String movieSelection = "Two";
+        String movieSelection = getString(R.string.Two_validation);
         switch(v.getId()) {
             case R.id.recycler_card_locations:
-                Toast.makeText(v.getContext(), "Coming Soon...", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.recycler_card_dinosaur:
                 Intent openDinosaurs = new Intent(v.getContext(),DinosaurActivity.class);
-                openDinosaurs.putExtra("FromMovie", movieSelection);
+                openDinosaurs.putExtra(getString(R.string.FromMovie_Intent_String), movieSelection);
                 v.getContext().startActivity(openDinosaurs);
                 break;
             case R.id.recycler_card_people:
                 Intent openPeople = new Intent(v.getContext(), PeopleActivity.class);
-                openPeople.putExtra("FromMovie", movieSelection);
+                openPeople.putExtra(getString(R.string.FromMovie_Intent_String), movieSelection);
                 v.getContext().startActivity(openPeople);
                 break;
             case R.id.recycler_card_events:
-                final String eventMovieSelection = "The Lost World";
+                final String eventMovieSelection = getString(R.string.The_Lost_World);
                 Intent openEvents = new Intent(v.getContext(), EventMainFragActivity.class);
-                openEvents.putExtra("FromMovie", eventMovieSelection);
+                openEvents.putExtra(getString(R.string.FromMovie_Intent_String), eventMovieSelection);
                 v.getContext().startActivity(openEvents);
                 break;
         }

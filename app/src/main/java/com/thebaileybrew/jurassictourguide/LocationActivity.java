@@ -34,7 +34,6 @@ public class LocationActivity extends AppCompatActivity {
         locationDetails = findViewById(R.id.location_details);
         locationMap = findViewById(R.id.location_zoom);
         mRecyclerView = findViewById(R.id.location_recycler);
-        Toast.makeText(this, "Current Location Size: " + String.valueOf(Locations.size()), Toast.LENGTH_SHORT).show();
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         mRecyclerView.setLayoutManager(layoutManager);
 

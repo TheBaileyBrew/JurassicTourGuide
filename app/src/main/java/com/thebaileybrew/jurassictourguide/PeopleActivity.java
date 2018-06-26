@@ -24,7 +24,7 @@ public class PeopleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.people_recycler);
         Intent getFragIntent = getIntent();
-        String movieSelection = getFragIntent.getStringExtra("FromMovie");
+        String movieSelection = getFragIntent.getStringExtra(getString(R.string.FromMovie_Intent_String));
 
         people = findViewById(R.id.people);
         peopleActor = findViewById(R.id.people_actor);
@@ -48,11 +48,9 @@ public class PeopleActivity extends AppCompatActivity {
             public void onItemClick(View v, int position) {
                 people currentPeep = People.get(position);
                 String selected = currentPeep.getPeople();
-                Toast.makeText(PeopleActivity.this, "You've selected: " + selected,
-                        Toast.LENGTH_SHORT).show();
                 people.setText(currentPeep.getPeople());
-                if (currentPeep.getPeopleLocation().contains("World") ||
-                        currentPeep.getPeopleLocation().contains("Fallen")) {
+                if (currentPeep.getPeopleLocation().contains(getString(R.string.World_validation)) ||
+                        currentPeep.getPeopleLocation().contains(getString(R.string.Fallen_validation))) {
                     people.setTextColor(getResources().getColor(R.color.colorAccentWorld));
                 } else {
                     people.setTextColor(getResources().getColor(R.color.colorPrimary));
@@ -65,16 +63,26 @@ public class PeopleActivity extends AppCompatActivity {
                 peopleClassification.setText(currentPeep.getPeopleClassification());
                 peopleLocation.setText(getString(R.string.films_appeared));
                 peopleLocation.append("\n");
-                if (currentPeep.getPeopleLocation().contains("One")) {
-                    peopleLocation.append("  Jurassic Park\n"); }
-                if (currentPeep.getPeopleLocation().contains("Two")) {
-                    peopleLocation.append("  The Lost World: Jurassic Park\n"); }
-                if (currentPeep.getPeopleLocation().contains("Three")) {
-                    peopleLocation.append("  Jurassic Park III\n"); }
-                if (currentPeep.getPeopleLocation().contains("World")) {
-                    peopleLocation.append("  Jurassic World\n"); }
-                if (currentPeep.getPeopleLocation().contains("Fallen")) {
-                    peopleLocation.append("  Jurassic World: Fallen Kingdom\n"); }
+                if (currentPeep.getPeopleLocation().contains(getString(R.string.One_validation))) {
+                    peopleLocation.append(getString(R.string.Space_Jurassic_Park));
+                    peopleLocation.append("\n");
+                }
+                if (currentPeep.getPeopleLocation().contains(getString(R.string.Two_validation))) {
+                    peopleLocation.append(getString(R.string.Space_The_Lost_World));
+                    peopleLocation.append("\n");
+                }
+                if (currentPeep.getPeopleLocation().contains(getString(R.string.Three_validation))) {
+                    peopleLocation.append(getString(R.string.Space_Jurassic_Three));
+                    peopleLocation.append("\n");
+                }
+                if (currentPeep.getPeopleLocation().contains(getString(R.string.World_validation))) {
+                    peopleLocation.append(getString(R.string.Space_Jurassic_World));
+                    peopleLocation.append("\n");
+                }
+                if (currentPeep.getPeopleLocation().contains(getString(R.string.Fallen_validation))) {
+                    peopleLocation.append(getString(R.string.Space_World_Fallen_Kingdom));
+                    peopleLocation.append("\n");
+                }
                 peopleDetails.setText(getString(R.string.character_details));
                 peopleDetails.append("\n  ");
                 peopleDetails.append(currentPeep.getPeopleDetails());

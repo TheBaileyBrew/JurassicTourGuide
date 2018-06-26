@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class FullEventDetailsFragment extends Fragment {
 
-    private static final String EXTRA_CARD_MODEL = "EXTRA_CARD_MODEL";
+    private static final String EXTRA_CARD_MODEL = App.getContext().getResources().getString(R.string.Card_Details_Tag);
     private static event eventModel;
     private ArrayList<event> Events = new ArrayList<>();
     private DinoCollectionArray eventList = new DinoCollectionArray();

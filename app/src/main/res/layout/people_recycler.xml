@@ -1,74 +1,79 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_height="match_parent"
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/people_recycler"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
+        android:layout_height="270dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="36dp"
-        android:layout_height="270dp"/>
+        android:orientation="horizontal" />
+
     <LinearLayout
         android:id="@+id/people_detail_listing"
-        android:layout_below="@+id/people_recycler"
-        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/people_recycler"
         android:layout_marginBottom="@dimen/standard_margin16"
         android:layout_marginLeft="@dimen/standard_margin16"
         android:layout_marginRight="@dimen/standard_margin16"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/people"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/standard_text32"
-            android:textColor="@color/colorPrimary"
+            android:shadowColor="@color/colorPrimaryDark"
             android:shadowDx="2"
             android:shadowDy="2"
             android:shadowRadius="2"
-            android:shadowColor="@color/colorPrimaryDark"/>
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/standard_text32" />
+
         <TextView
             android:id="@+id/people_actor"
-            android:layout_marginTop="@dimen/small_margin8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/standard_text24"
-            android:textColor="@color/colorPrimaryDark"/>
+            android:layout_marginTop="@dimen/small_margin8"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/standard_text24" />
+
         <TextView
             android:id="@+id/people_classification"
-            android:layout_marginTop="@dimen/small_margin8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/standard_text24"
-            android:textColor="@color/colorPrimaryDark"/>
+            android:layout_marginTop="@dimen/small_margin8"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/standard_text24" />
+
         <TextView
             android:id="@+id/people_location"
-            android:layout_marginTop="@dimen/small_margin8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/standard_text24"
-            android:textColor="@color/colorPrimaryDark"/>
+            android:layout_marginTop="@dimen/small_margin8"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/standard_text24" />
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/small_margin8"
-            android:scrollbars="vertical"
-            android:scrollbarSize="3dp">
+            android:scrollbarSize="3dp"
+            android:scrollbars="vertical">
+
             <TextView
                 android:id="@+id/people_details"
-                android:layout_marginRight="@dimen/small_margin8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/standard_text24"
-                android:textColor="@color/colorPrimaryDark"/>
+                android:layout_marginRight="@dimen/small_margin8"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/standard_text24" />
         </ScrollView>
         
     </LinearLayout>
     
 </RelativeLayout>
-
-

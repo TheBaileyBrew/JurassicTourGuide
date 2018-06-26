@@ -37,7 +37,7 @@ public class EventActivity extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        thisMovieSelection = getActivity().getIntent().getExtras().getString("FromMovie");
+        thisMovieSelection = getActivity().getIntent().getExtras().getString(getString(R.string.FromMovie_Intent_String));
     }
 
     @Override
@@ -101,7 +101,6 @@ public class EventActivity extends Fragment {
         }
     }
     public void onClick(int position) {
-        Toast.makeText(getContext(), "You've selected an item...", Toast.LENGTH_SHORT).show();
         FullEventDetailsFragment fragment = FullEventDetailsFragment.newInstance(adapter.getModelByPos(position));
         Events.clear();
         getActivity().getSupportFragmentManager()

@@ -15,7 +15,7 @@ public class EventMainFragActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.event_blank);
         Intent getFragIntent = getIntent();
-        String movieSelection = getFragIntent.getStringExtra("FromMovie");
+        String movieSelection = getFragIntent.getStringExtra(getString(R.string.FromMovie_Intent_String));
         if (savedInstanceState == null) {
             getSupportFragmentManager()
                     .beginTransaction()

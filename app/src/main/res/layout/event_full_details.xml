@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,65 +9,72 @@
     android:paddingRight="@dimen/small_margin8"
     android:paddingStart="@dimen/small_margin8"
     android:paddingTop="@dimen/small_margin6">
+
     <ImageView
         android:id="@+id/event_image"
         android:layout_width="wrap_content"
         android:layout_height="250dp"
-        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"/>
+        android:adjustViewBounds="true" />
+
     <TextView
         android:id="@+id/event_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/event_image"
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal"
-        android:layout_below="@id/event_image"
+        android:text="@string/event_full_details_event_name_text"
         android:textColor="@color/colorPrimary"
-        android:textStyle="bold"
         android:textSize="@dimen/large_text48"
-        android:text="Isla Nublar Incident"/>
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/event_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/event_name"
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal"
-        android:layout_below="@id/event_name"
+        android:text="@string/event_full_details_event_location_text"
         android:textColor="@color/colorPrimaryFade"
-        android:textSize="@dimen/large_text40"
-        android:text="Isla Nublar - Velociraptor Pen"/>
+        android:textSize="@dimen/large_text40" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/event_location"
         android:layout_marginLeft="@dimen/standard_margin16"
         android:layout_marginRight="@dimen/standard_margin16"
-        android:layout_below="@id/event_location"
-        android:scrollbars="vertical"
-        android:scrollbarSize="3dp">
+        android:scrollbarSize="3dp"
+        android:scrollbars="vertical">
+
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+
             <TextView
                 android:id="@+id/event_people"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:gravity="center_horizontal"
                 android:layout_marginTop="@dimen/small_margin6"
+                android:gravity="center_horizontal"
+                android:text="@string/event_full_details_event_people_text"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="@dimen/standard_text32"
-                android:text="These are the people who witnessed"/>
+                android:textSize="@dimen/standard_text32" />
+
             <TextView
                 android:id="@+id/event_details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/event_people"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="@dimen/small_margin6"
-                android:layout_below="@id/event_people"
+                android:text="@string/event_full_details_event_details_text"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="@dimen/standard_text24"
-                android:text="Lots of text should go here because the quick brown fox jumped over the lazy dog before he could stop."/>
+                android:textSize="@dimen/standard_text24" />
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>
